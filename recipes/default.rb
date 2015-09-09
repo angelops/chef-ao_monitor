@@ -20,4 +20,6 @@
 include_recipe 'apache2'
 include_recipe 'postfix'
 include_recipe 'nagios'
+
+chef_gem 'rest-client' # wtf?
 #include_recipe 'flapjack'
