@@ -21,9 +21,13 @@ include_recipe 'apache2'
 include_recipe 'postfix'
 include_recipe 'nagios'
 
+# https://sethvargo.com/using-gems-with-chef/
+# https://github.com/adamsb6/s3_file/pull/36/files
+
 package 'build-essential' do
   action :nothing
 end.run_action(:install)
 
 chef_gem 'rest-client' # wtf?
-#include_recipe 'flapjack'
+
+include_recipe 'flapjack'
