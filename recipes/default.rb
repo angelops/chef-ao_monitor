@@ -21,5 +21,9 @@ include_recipe 'apache2'
 include_recipe 'postfix'
 include_recipe 'nagios'
 
+package 'build-essential' do
+  action :nothing
+end.run_action(:install)
+
 chef_gem 'rest-client' # wtf?
 #include_recipe 'flapjack'
