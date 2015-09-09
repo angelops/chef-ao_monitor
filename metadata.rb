@@ -5,3 +5,8 @@ license          'Apache 2.0'
 description      'Installs/Configures zip_monitor'
 long_description 'Installs/Configures zip_monitor'
 version          '0.1.0'
+
+depends 'postfix'
+depends 'nagios'
+depends 'flapjack'
+depends 'apache2'
