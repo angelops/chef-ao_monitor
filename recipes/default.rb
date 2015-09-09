@@ -20,4 +20,4 @@
 include_recipe 'apache2'
 include_recipe 'postfix'
 include_recipe 'nagios'
-include_recipe 'flapjack'
+#include_recipe 'flapjack'
