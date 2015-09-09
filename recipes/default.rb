@@ -30,4 +30,4 @@ end.run_action(:install)
 
 chef_gem 'rest-client' # wtf?
 
-include_recipe 'flapjack'
+#include_recipe 'flapjack'
