@@ -8,5 +8,5 @@ version          '0.2.3'
 
 depends 'postfix'
 depends 'nagios'
-depends 'flapjack'
+#depends 'flapjack'
 depends 'apache2'
