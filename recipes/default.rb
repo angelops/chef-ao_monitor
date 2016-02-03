@@ -32,4 +32,12 @@ python_package 'nagios-mesos'
 
 chef_gem 'rest-client' # wtf?
 
+node['zip_monitor']['install_plugins'].each do |plugin|
+  cookbook_file node['nagios']['plugin_dir'] + '/' + plugin
+    source plugin
+    mode '0755'
+    action :create
+  end
+end
+
 #include_recipe 'flapjack'
