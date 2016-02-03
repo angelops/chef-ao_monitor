@@ -28,9 +28,6 @@ package 'build-essential' do
   action :nothing
 end.run_action(:install)
 
-package 'python-pip'
-python_package 'nagios-mesos'
-
 chef_gem 'rest-client' # wtf?
 
 node['zip_monitor']['install_plugins'].each do |plugin|
@@ -42,3 +39,7 @@ node['zip_monitor']['install_plugins'].each do |plugin|
 end
 
 #include_recipe 'flapjack'
+
+#package 'python-pip'
+easy_install_package 'nagios-mesos'
+
