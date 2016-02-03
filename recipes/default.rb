@@ -28,6 +28,7 @@ package 'build-essential' do
   action :nothing
 end.run_action(:install)
 
+package 'python-pip'
 python_package 'nagios-mesos'
 
 chef_gem 'rest-client' # wtf?
