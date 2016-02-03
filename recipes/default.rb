@@ -28,6 +28,8 @@ package 'build-essential' do
   action :nothing
 end.run_action(:install)
 
+python_package 'nagios-mesos'
+
 chef_gem 'rest-client' # wtf?
 
 #include_recipe 'flapjack'

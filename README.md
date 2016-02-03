@@ -37,6 +37,16 @@ Include `zip_monitor` in your node's `run_list`:
 }
 ```
 
+## Upstream sources
+
+Hadoop checks from:
+
+  https://github.com/ZipRealty/hadoop-nagios
+
+Mesos checks from:
+
+  https://github.com/ZipRealty/nagios-mesos
+
 ## License and Authors
 
 Author:: Justin Alan Ryan (ZipRealty / Realogy) (<juryan@ziprealty.com>)
