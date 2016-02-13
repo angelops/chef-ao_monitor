@@ -20,6 +20,7 @@
 include_recipe 'apache2'
 include_recipe 'postfix'
 include_recipe 'nagios'
+include_recipe 'ganglia::gmetad'
 
 # https://sethvargo.com/using-gems-with-chef/
 # https://github.com/adamsb6/s3_file/pull/36/files
