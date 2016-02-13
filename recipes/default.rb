@@ -21,6 +21,7 @@ include_recipe 'apache2'
 include_recipe 'postfix'
 include_recipe 'nagios'
 include_recipe 'ganglia::gmetad'
+include_recipe 'ganglia::gmond_collector'
 include_recipe 'ganglia::web'
 
 # https://sethvargo.com/using-gems-with-chef/
