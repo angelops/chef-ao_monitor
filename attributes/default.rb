@@ -8,6 +8,6 @@ default['ganglia']['unicast'] = true
 default['ganglia']['server_role'] = 'monitoring'
 default['ganglia']['clusterport'] = {
   "default" => 18649,
-  "zip_mesos_manager" => 18650,
-  "zip_mesos_worker" => 18651
+  "manager" => 18650,
+  "worker" => 18651
 }
