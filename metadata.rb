@@ -4,7 +4,7 @@ maintainer_email 'juryan@ziprealty.com'
 license          'Apache 2.0'
 description      'Installs/Configures zip_monitor'
 long_description 'Installs/Configures zip_monitor'
-version          '0.4.8'
+version          '0.4.9'
 
 depends 'postfix'
 depends 'nagios'
