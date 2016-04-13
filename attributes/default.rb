@@ -1,5 +1,5 @@
 #node.default['nagios']['server']['web_server'] = 'nginx'
-default['nagios']['conf']['interval_length'] = 1
+force_default['nagios']['conf']['interval_length'] = 1
 default['nagios']['default_service']['notification_interval'] = 0
 node.default['apache']['mpm'] = 'prefork'
 default['zip_monitor']['additional_packages'] = %w{nagcon nagios-plugins nagios-plugins-contrib}
