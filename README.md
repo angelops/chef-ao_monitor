@@ -1,4 +1,4 @@
-# zip_monitor-cookbook
+# ao_monitor-cookbook
 
 TODO: Enter the cookbook description here.
 
@@ -16,7 +16,7 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['zip_monitor']['bacon']</tt></td>
+    <td><tt>['ao_monitor']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -25,14 +25,14 @@ TODO: List your supported platforms.
 
 ## Usage
 
-### zip_monitor::default
+### ao_monitor::default
 
-Include `zip_monitor` in your node's `run_list`:
+Include `ao_monitor` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[zip_monitor::default]"
+    "recipe[ao_monitor::default]"
   ]
 }
 ```

@@ -12,8 +12,8 @@ platforms:
 suites:
   - name: default
     run_list:
-    - recipe[zip_common::default]
-    - recipe[zip_monitor::default]
+    - recipe[ao_common::default]
+    - recipe[ao_monitor::default]
     attributes:
 data_bags_path: test/data_bags
 

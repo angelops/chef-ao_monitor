@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: zip_monitor
+# Cookbook Name:: ao_monitor
 # Recipe:: default
 #
 # Copyright (C) 2015 Justin Alan Ryan (ZipRealty / Realogy)
@@ -34,7 +34,7 @@ end.run_action(:install)
 
 chef_gem 'rest-client' # wtf?
 
-node['zip_monitor']['install_plugins'].each do |plugin|
+node['ao_monitor']['install_plugins'].each do |plugin|
   cookbook_file node['nagios']['plugin_dir'] + '/' + plugin do
     source plugin
     mode '0755'
